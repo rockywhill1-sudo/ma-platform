@@ -29,7 +29,7 @@ export async function updateSession(request: NextRequest) {
     path.startsWith('/login') ||
     path.startsWith('/signup') ||
     path.startsWith('/auth') ||
-    path.startsWith('/api/brevo-subscribe') ||
+    path.startsWith('/api/brevo-subscribe') || path.startsWith('/api/parse') ||
     // Reports are public-by-link (for emailed report viewing)
     /^\/companies\/[^\/]+\/reports\/[^\/]+$/.test(path);
 
